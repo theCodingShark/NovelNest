@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NovelNest - Payment</title>
+	<style>
+		* {box-sizing: border-box;}
+		body {margin: 0; padding: 0; font-family: Arial, sans-serif; background-color:#dfe9fe; color: black;}
+		a {text-decoration: none; color: white;}
+		ul {margin: 0; padding: 0; list-style: none;}
+		.container {max-width: 1200px; margin: 0 auto; padding: 0 20px;}
+		header {background-color: #aec7fc; color: black; padding: 20px 0;}
+		header .container {display: flex; align-items: center; justify-content: space-between;}
+		header .logo {font-size: 36px; font-weight: bold;}
+		header nav {display: flex; align-items: center;}
+		header nav ul {display: flex;}
+		header nav ul li a {font-size: 20px; font-weight: bold; color: black; margin: 0 10px;}
+		header nav ul li a:hover {color: white;}
+		.payment {padding: 50px 0;}
+		.payment h2 {font-size: 38px; font-weight: bold; margin-bottom: 30px;}
+		.payment form {display: flex; flex-wrap: wrap;}
+		.payment form input {padding: 10px; border-radius: 5px; border: none; margin-bottom: 20px; flex: 1;}
+		.payment form label {display: block; font-size: 20px; font-weight: bold; margin-bottom: 10px; flex-basis: 50%;}
+		.payment .button {background-color: black; color: white; padding: 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 20px; margin: 20px 0px 0px 970px;}
+		.payment .button:hover {background-color: #444;}
+
+		/* Footer */
+		footer {
+			background-color: #333;
+			color:#F5F3E9;
+			padding: 20px 0;
+			text-align: center;
+		}
+		
+		footer p {
+			font-size: 0.9em;
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1 class="logo">NovelNest</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="registration.html">Register</a></li>
+					<li><a href="login.html">Log In</a></li>
+					<li><a href="catalogue.html">Catalogue</a></li>
+					<li><a href="cart.html">Shopping Cart</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section class="payment">
+		<div class="container">
+			<h2>Payment</h2>
+			<form>
+				<label for="name">Name on Card</label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="cardnumber">Card Number</label>
+				<input type="text" id="cardnumber" name="cardnumber" required>
+
+				<label for="expirydate">Expiry Date</label>
+				<input type="text" id="expirydate" name="expirydate" placeholder="MM / YY" required>
+			
+				<label for="cvv">CVV</label>
+				<input type="text" id="cvv" name="cvv" required>
+			
+				<label for="address">Billing Address</label>
+				<textarea id="address" name="address" rows="4" cols="75" required></textarea>	
+				<div><input type="submit" value="Submit Payment" class="button"></div>				
+			</form>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<p>&copy; 2024 NovelNest. All rights reserved.</p>
+		</div>
+	</footer>
+</body>
+</html>

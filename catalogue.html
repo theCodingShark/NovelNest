@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NovelNest - Catalogue</title>
+	<style>
+		* {box-sizing: border-box;}
+		body {margin: 0; padding: 0; font-family: Arial, sans-serif; background-color:#dfe9fe; color: black;}
+		a {text-decoration: none; color: white;}
+		ul {margin: 0; padding: 0; list-style: none;}
+		.container {max-width: 1200px; margin: 0 auto; padding: 0 20px;}
+		header {background-color: #aec7fc; color: black; padding: 20px 0;}
+		header .container {display: flex; align-items: center; justify-content: space-between;}
+		header .logo {font-size: 36px; font-weight: bold;}
+		header nav {display: flex; align-items: center;}
+		header nav ul {display: flex;}
+		header nav ul li a {font-size: 20px; font-weight: bold; color: black; margin: 0 10px;}
+		header nav ul li a:hover {color: white;}
+		.books-catalogue {padding: 50px 0;}
+		.books-catalogue h2 {font-size: 36px; font-weight: bold; margin-bottom: 30px;}
+		.book-item {background-color: #fffaef; width: 1200px; margin-bottom: 30px; display: flex; border-radius: 5px; box-shadow: 0px 0px 5px rgba(0,0,0,0.3);}
+		.book-item img {width: 200px; height: 300px; object-fit: cover; border-top-left-radius: 5px; border-bottom-left-radius: 5px;}
+		.book-item .book-details {padding: 20px;}
+		.book-item .book-details h3 {font-size: 24px; font-weight: bold; margin-bottom: 10px;}
+		.book-item .book-details p {margin-bottom: 10px;}
+		.book-item .book-details .price {font-size: 20px; font-weight: bold; color: #444; margin-top: 20px;}
+		.book-item .book-details .btn {background-color: black; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;}
+		.book-item .book-details .btn:hover {background-color: #444;}
+		/* Footer */
+		footer {
+			background-color: #333;
+			color:#F5F3E9;
+			padding: 20px 0;
+			text-align: center;
+		}
+		
+		footer p {
+			font-size: 0.9em;
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1 class="logo">NovelNest</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="registration.html">Register</a></li>
+					<li><a href="login.html">Log In</a></li>
+					<li class="active"><a href="catalogue.html">Catalogue</a></li>
+					<li><a href="cart.html">Shopping Cart</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section class="books-catalogue">
+		<div class="container">
+			<h2>Books Catalogue</h2>
+			<div class="book-item">
+				<div class="book-details">
+					<img src="image/book1.jpg" alt="Book 1">
+					<h3>The Secret Messenger</h3>
+					<p>Mandy Robotham</p>
+					<p class="price">Price: ₹399.00</p>
+					<a href="#" class="btn">Add to Cart</a>
+				</div>
+				<div class="book-details">
+					<img src="image/book2.jpg" alt="Book 2">
+					<h3>It Starts With Us</h3>
+					<p>Colleen Hoover</p>
+					<p class="price">Price: ₹899.00</p>
+					<a href="#" class="btn">Add to Cart</a>
+				</div>
+				<div class="book-details">
+					<img src="image/book3.jpg" alt="Book 3">
+					<h3>It Ends With Us</h3>
+					<p>Colleen Hoover</p>
+					<p class="price">Price: ₹899.00</p>
+					<a href="#" class="btn">Add to Cart</a>
+				</div>
+				<div class="book-details">
+					<img src="image/book4.jpg" alt="Book 4">
+					<h3>The Splendid And The Vile</h3>
+					<p>Erik Larson</p>
+					<p class="price">Price: ₹599.00</p>
+					<a href="#" class="btn">Add to Cart</a>
+				</div>
+				<div class="book-details">
+					<img src="image/book5.jpg" alt="Book 5">
+					<h3>The Paper Palace</h3>
+					<p>Miranda Cowley Heller</p>
+					<p class="price">Price: ₹364.00</p>
+					<a href="#" class="btn">Add to Cart</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<p>&copy; 2024 NovelNest. All rights reserved.</p>
+		</div>
+	</footer>
+</body>
+</html>

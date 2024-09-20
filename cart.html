@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NovelNest - Shopping Cart</title>
+	<style>
+		* {box-sizing: border-box;}
+		body {margin: 0; padding: 0; font-family: Arial, sans-serif; background-color:#dfe9fe; color: black;}
+		a {text-decoration: none; color: white;}
+		ul {margin: 0; padding: 0; list-style: none;}
+		.container {max-width: 1200px; margin: 0 auto; padding: 0 20px;}
+		header {background-color: #aec7fc; color: black; padding: 20px 0;}
+		header .container {display: flex; align-items: center; justify-content: space-between;}
+		header .logo {font-size: 36px; font-weight: bold;}
+		header nav {display: flex; align-items: center;}
+		header nav ul {display: flex;}
+		header nav ul li a {font-size: 20px; font-weight: bold; color: black; margin: 0 10px;}
+		header nav ul li a:hover {color: white;}
+		.cart {padding: 50px 0;}
+		.cart h2 {font-size: 36px; font-weight: bold; margin-bottom: 30px;}
+		.cart table {width: 100%; border-collapse: collapse; margin-bottom: 30px;}
+		.cart th, .cart td {padding: 10px; text-align: left; border-bottom: 1px solid #ccc;}
+		.cart th {background-color: #fff0f0; font-size: 22px;}
+		.cart td input {padding: 5px; border-radius: 5px; border: 1px solid #ccc; margin-right: 10px; font-size: 20px;}
+		.cart .total-price {font-size: 24px; font-weight: bold; margin-bottom: 20px;}
+		.cart .btn {background-color: black; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 20px;}
+		.cart .btn:hover {background-color: #444;}
+
+		/* Footer */
+		footer {
+			background-color: #333;
+			color:#F5F3E9;
+			padding: 20px 0;
+			text-align: center;
+		}
+		
+		footer p {
+			font-size: 0.9em;
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1 class="logo">NovelNest</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="registration.html">Register</a></li>
+					<li><a href="login.html">Log In</a></li>
+					<li><a href="catalogue.html">Catalogue</a></li>
+					<li class="active"><a href="cart.html">Shopping Cart</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section class="cart">
+		<div class="container">
+			<h2>Shopping Cart</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Book</th>
+						<th>Price</th>
+						<th>Quantity</th>
+						<th>Total</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>The Secret Messenger</td>
+						<td>₹399.00</td>
+						<td>1</td>
+						<td>₹399.00</td>
+					</tr>
+					<tr>
+						<td>It Starts With Us</td>
+						<td>₹899.00</td>
+						<td>2</td>
+						<td>₹1798.00</td>
+					</tr>
+					<tr>
+						<td>The Splendid And The Vile</td>
+						<td>₹599.00</td>
+						<td>1</td>
+						<td>₹599.00</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="3">Subtotal:</td>
+						<td>₹2796.00</td>
+					</tr>
+					<tr>
+						<td colspan="3">Shipping:</td>
+						<td>₹50.00</td>
+					</tr>
+					<tr class="total-price">
+						<td colspan="3">Total:</td>
+						<td>₹2846.00</td>
+					</tr>
+				</tfoot>
+			</table>
+		
+			<div>
+				<a href="catalogue.html" class="btn">Continue Shopping</a>
+				<a href="payment.html" class="btn">Checkout</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<p>&copy; 2024 NovelNest. All rights reserved.</p>
+		</div>
+	</footer>
+</body>
+</html>
