@@ -75,8 +75,14 @@
 	<!-- Footer -->
 	<footer id="footer">
 		<div class="container">
-			<p>&copy; 2024 NovelNest. All rights reserved.</p>
+			<p>&copy; <span id="year">2024</span> NovelNest. All rights reserved.</p>
 		</div>
 	</footer>
+
+	<!-- script for dynamically fetching year for footer   -->
+	  <script>
+	    document.getElementById("year").textContent = new Date().getFullYear();
+	  </script>
+	
 </body>
 </html>
